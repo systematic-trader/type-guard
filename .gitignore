@@ -1,0 +1,51 @@
+# dependencies
+node_modules
+
+# production
+/build
+.docz
+.next
+
+# misc
+.DS_Store
+.vscode
+.idea
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.npmrc
+.yarnrc
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Various temp filenames.
+*~
+#*#
+.DS_Store
+.coverage
+coverage
+*.lcov
+**/build
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# jsdoc
+public/dist/
+public/index.html
+
+.vscode/
+data/

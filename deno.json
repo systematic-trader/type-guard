@@ -1,0 +1,43 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.224.0/"
+  },
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "test": {
+    "include": ["src/**/*.test.ts"]
+  },
+  "lint": {
+    "include": ["src/", "mod.ts"],
+    "exclude": [],
+    "rules": {
+      "tags": ["recommended"],
+      "include": [
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-module-boundary-types",
+        "no-console",
+        "no-const-assign",
+        "no-inferrable-types",
+        "no-non-null-asserted-optional-chain",
+        "no-self-compare",
+        "no-sparse-arrays",
+        "no-throw-literal",
+        "triple-slash-reference",
+        "verbatim-module-syntax"
+      ]
+    }
+  },
+  "fmt": {
+    "include": ["src/", "mod.ts"],
+    "exclude": [],
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  }
+}
