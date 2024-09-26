@@ -13,7 +13,7 @@ const StringFormats = {
   base64: /^(?:[A-Z\d+/]{4})*(?:[A-Z\d+/]{2}==|[A-Z\d+/]{3}=)?$/i,
   camelcase: /^[a-z]+(?:[A-Z][a-z]+)*$/,
   'date-iso8601':
-    /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T(0\d|1\d|2[0-3]):[0-5]\d:[0-5]\d\.\d+Z$/i,
+    /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])(T(0\d|1\d|2[0-3]):[0-5]\d:[0-5]\d(\.\d+)?Z)?$/i,
   // email regex source: https://github.com/epoberezkin/ajv/blob/d5edde43752e8c1bdb26074402452a41fe0742cb/lib/compile/formats.js#L46
   email:
     /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d](?:[a-z\d-]{0,61}[a-z\d])?(?:\.[a-z\d](?:[a-z\d-]{0,61}[a-z\d])?)*$/i,
